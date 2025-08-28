@@ -9,12 +9,13 @@ import image1 from '../../assets/img/ceramic-vase-PR85FCP 1.png';
 
 function Banner() {
   const swiperRef = useRef<SwiperClass | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const slides = [
-    {id: 1, href: "/", img: image1, alt: "", name: "Antique Vast1", cost: "$171.00", type: "Vase"},
-    {id: 2, href: "/", img: image1, alt: "", name: "Antique Vast2", cost: "$172.00", type: "Carpet"},
-    {id: 3, href: "/", img: image1, alt: "", name: "Antique Vast3", cost: "$173.00", type: "Lamp Shade"},
-    {id: 4, href: "/", img: image1, alt: "", name: "Antique Vast4", cost: "$174.00", type: "Wall Decoration"}
+    {id: 1, href: "/", img: image1, alt: "", name: "Antique Vast 1", cost: "$171.00", type: "Vase"},
+    {id: 2, href: "/", img: image1, alt: "", name: "Antique Vast 2", cost: "$172.00", type: "Carpet"},
+    {id: 3, href: "/", img: image1, alt: "", name: "Antique Vast 3", cost: "$173.00", type: "Lamp Shade"},
+    {id: 4, href: "/", img: image1, alt: "", name: "Antique Vast 4", cost: "$174.00", type: "Wall Decoration"}
   ];
 
   const [count, setCount] = useState<{ [key: number]: number }>({});
@@ -47,6 +48,7 @@ function Banner() {
         }}
         a11y={{ enabled: true }}
         onSwiper={(swiper: SwiperClass) => (swiperRef.current = swiper)}
+        onSlideChange={(swiper: SwiperClass) => setActiveIndex(swiper.realIndex)}
       >
         {slides.map((s) => (
           <SwiperSlide key={s.id}>
@@ -62,7 +64,11 @@ function Banner() {
 
                <div className={styles.addDiv}>
                 <button onClick={() => decrease(s.id)}>-</button>
-                <div>{count[s.id] || 1}</div>
+                <div className={styles.countWrap}>
+                  <span key={count[s.id] || 1} className={styles.countNum}>
+                    {count[s.id] || 1}
+                  </span>
+                </div>
                 <button onClick={() => increase(s.id)}>+</button>
               </div>
 
@@ -73,7 +79,7 @@ function Banner() {
               {slides.map((item, index) => (
                 <div
                   key={item.id}
-                  className={styles.itemWrap}
+                  className={`${styles.itemWrap} ${activeIndex === index ? styles.active : ""}`}
                   onClick={() => swiperRef.current?.slideToLoop(index)}
                 >
                   <div className={styles.itemNum}>

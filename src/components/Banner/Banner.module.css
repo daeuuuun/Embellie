@@ -74,7 +74,7 @@
   font-family: 'Poppins-Bold';
 }
 
-.addDiv > div {
+.addDiv > .countWrap {
   width: 60px;
   height: 60px;
   border: 1px solid #909090;
@@ -85,6 +85,23 @@
   font-size: 18px;
   font-family: 'Poppins-Bold';
   cursor: pointer;
+  overflow: hidden;
+}
+
+.countNum {
+  display: inline-block;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .rightTab {
@@ -105,6 +122,14 @@
   height: 0;
   background: #424241;
   transition: height 0.4s ease;
+}
+
+.active .underline {
+  height: 80px;
+}
+
+.rightTab:hover .active .underline {
+  height: 0;
 }
 
 .itemWrap:hover .underline {
