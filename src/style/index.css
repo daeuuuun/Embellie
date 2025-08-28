@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F6F4F1;
+  font-family: 'Poppins-Regular', 'Poppins-Medium', 'Poppins-SemiBold', 'Poppins-Bold';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

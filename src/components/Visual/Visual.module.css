@@ -1,0 +1,95 @@
+main {
+  padding: 0 160px;
+  position: relative;
+  display: flex;
+}
+
+.textArea {
+  width: 648px;
+  height: 532px;
+  margin-top: 80px;
+}
+
+.textArea > h2 {
+  font-family: 'Poppins-Bold';
+  font-size: 72px;
+  color: #424241;
+  cursor: pointer;
+}
+
+.textArea > p {
+  font-family: 'Poppins-Regular';
+  font-size: 24px;
+  color: #909090;
+  width: 512px;
+  margin-top: 32px;
+  margin-bottom: 72px;
+  cursor: pointer;
+}
+
+.textArea > .buttons {
+  display: flex;
+}
+
+.textArea > .buttons > .shopButton {
+  width: 180px;
+  height: 60px;
+  background-color: #424241;
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  border: none;
+  color: #fff;
+  margin-right: 32px;
+}
+
+.textArea > .buttons > .playButton {
+  width: 240px;
+  height: 60px;
+  border: none;
+  background-color: #F6F4F1;
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  display: flex;
+  align-items: center;
+  color: #424241;
+}
+
+.textArea > .buttons > .playButton > span {
+  padding-left: 16px;
+}
+
+.textArea > .numbersDiv {
+  margin-top: 80px;
+  display: flex;
+}
+
+.textArea > .numbersDiv > .number {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textArea > .numbersDiv > .number > span {
+  font-size: 64px;
+  font-family: 'Poppins-Medium';
+  color: #424241;
+  cursor: pointer;
+}
+
+.textArea > .numbersDiv > .number > p {
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  color: #909090;
+  cursor: pointer;
+}
+
+.backText {
+  color: #424241;
+  opacity: 5%;
+  position: absolute;
+  font-size: 288px;
+  font-family: 'Poppins-SemiBold';
+  left: 746px;
+  top: 280px;
+}

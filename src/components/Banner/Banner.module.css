@@ -1,0 +1,133 @@
+.bannerWrap {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 80px;
+}
+
+.bannerCard, .bannerCard img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerCard img {
+  object-fit: cover;
+  width: 530px;
+  height: 800px;
+  padding-bottom: 100px;
+}
+
+.shopDiv {
+  position: absolute;
+  top: 725px;
+  background-color: #fff;
+  width: 620px;
+  height: 135px;
+  box-shadow: 0 24px 50px 0 rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.textDiv > .sName {
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  color: #909090;
+  cursor: pointer;
+}
+
+.textDiv > .sCost {
+  font-size: 24px;
+  font-family: 'Poppins-Bold';
+  color: #424241;
+  cursor: pointer;
+}
+
+.cartBtn {
+  border: none;
+  background-color: #968864;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Poppins-Bold';
+  width: 160px;
+  height: 60px;
+}
+
+.addDiv {
+  display: flex;
+}
+
+.addDiv > button {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  font-family: 'Poppins-Bold';
+}
+
+.addDiv > div {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #909090;
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Poppins-Bold';
+  cursor: pointer;
+}
+
+.rightTab {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.underline {
+  width: 0.1px;
+  height: 0;
+  background: #424241;
+  transition: height 0.4s ease;
+}
+
+.itemWrap:hover .underline {
+  height: 80px;
+}
+
+.itemNum {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.num {
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  color: #909090;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 24px;
+  font-family: 'Poppins-Bold';
+  color: #424241;
+  cursor: pointer;
+}
