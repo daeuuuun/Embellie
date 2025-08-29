@@ -3,18 +3,23 @@ import styles from './Header.module.css';
 import shopping from '../../assets/img/Shopping Bag.svg';
 import menu from '../../assets/img/Menu.svg';
 import circle from '../../assets/img/Ellipse notif.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <>
-      <header>
+      <header className={styles.embellieHeader}>
         <h1>Emb<span>ellie</span></h1>
 
         <nav>
           <ul>
             <li>Home</li>
             <li>Collection</li>
-            <li>Categories</li>
+            <li>
+              <Link to='archesky'>
+                Categories
+              </Link>
+            </li>
             <li>Galleries</li>
             <li>About</li>
           </ul>

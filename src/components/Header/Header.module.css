@@ -1,4 +1,4 @@
-header {
+.embellieHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,23 +6,23 @@ header {
   height: 120px;
 }
 
-header > h1 {
+.embellieHeader > h1 {
   font-size: 36px;
   font-family: 'Poppins-SemiBold';
   color: #424241;
   cursor: pointer;
 }
 
-header > h1 > span {
+.embellieHeader > h1 > span {
   color: #968864;
 }
 
-header > nav > ul {
+.embellieHeader > nav > ul {
   display: flex;
   list-style: none;
 }
 
-header > nav > ul > li {
+.embellieHeader > nav > ul > li {
   font-size: 18px;
   font-family: 'Poppins-Regular';
   color: #424241;
@@ -33,7 +33,7 @@ header > nav > ul > li {
   cursor: pointer;
 }
 
-header > nav > ul > li::after {
+.embellieHeader > nav > ul > li::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -45,19 +45,19 @@ header > nav > ul > li::after {
   transition: width 0.3s ease;
 }
 
-header > nav > ul > li:hover::after {
+.embellieHeader > nav > ul > li:hover::after {
   width: 80%;
 }
 
-header > nav > ul > li:first-child {
+.embellieHeader > nav > ul > li:first-child {
   opacity: 1;
 }
 
-header > nav > ul:hover > li {
+.embellieHeader > nav > ul:hover > li {
   opacity: 0.5;
 }
 
-header > nav > ul > li:hover {
+.embellieHeader > nav > ul > li:hover {
   opacity: 1;
 }
 

@@ -1,0 +1,41 @@
+.archeskyHeader {
+  padding: 0 160px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  height: 120px;
+  width: 1600px;
+  align-items: center;
+  z-index: 10;
+}
+
+.archeskyHeader > div {
+  display: flex;
+  align-items: center;
+}
+
+.archeskyHeader > div > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 32px;
+}
+
+.archeskyHeader h1 {
+  font-size: 36px;
+  color: var(--color-black);
+  font-family: 'Poppins-SemiBold';
+  cursor: pointer;
+}
+
+.menus {
+  list-style: none;
+  display: flex;
+}
+
+.menus > li {
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  color: var(--color-black);
+  margin-left: 56px;
+  cursor: pointer;
+}

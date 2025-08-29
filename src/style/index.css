@@ -18,6 +18,19 @@
   src: url(../assets/fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+
+:root {
+  --color-black: #424241;
+  --color-mint: #7EDAD2;
+  --color-gray: #909090;
+  --color-dark-purple: #5D4D66;
+  --color-white: #FAFAFA;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,12 +38,12 @@
 
 body {
   background-color: #F6F4F1;
-  font-family: 'Poppins-Regular', 'Poppins-Medium', 'Poppins-SemiBold', 'Poppins-Bold';
+  font-family: 'Poppins-Regular', 'Poppins-Medium', 'Poppins-SemiBold', 'Poppins-Bold', 'BebasNeue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: inherit;
 }

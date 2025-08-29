@@ -1,0 +1,185 @@
+.archeskyMain {
+  padding-top: 120px;
+  position: relative;
+  height: 960px;
+}
+
+.visualH2 {
+  font-family: 'BebasNeue';
+  font-size: 120px;
+  color: var(--color-black);
+  margin-top: 80px;
+  font-weight: 400;
+}
+
+.visualH2 > span {
+  color: var(--color-mint);
+}
+
+.textArea > p {
+  font-size: 24px;
+  font-family: 'Poppins-Regular';
+  color: var(--color-gray);
+  margin-top: 8px;
+}
+
+.discussBtn {
+  font-size: 18px;
+  font-weight: 'Poppins-Regular';
+  color: var(--color-white);
+  width: 180px;
+  height: 60px;
+  border: none;
+  background-color: var(--color-mint);
+  margin-top: 40px;
+}
+
+.numbersDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 591px;
+  margin-top: 56px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number > span {
+  font-family: 'BebasNeue';
+  font-size: 48px;
+  color: var(--color-black);
+}
+
+.number > p {
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+  color: var(--color-gray);
+}
+
+.rightContents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1112px;
+  height: 938.08px;
+  background-color: var(--color-mint);
+  z-index: -10;
+  background-image: url(../../assets/img/rectangle.png);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.rightBack {
+  background-image: url(../../assets/img/rectangle-1.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% -400%;
+}
+
+.rightContents img {
+  width: 1112px;
+  height: 876px;
+  margin-top: 70px;
+}
+
+.bottomContents {
+  position: absolute;
+  bottom: -64px;
+  left: 160px;
+}
+
+.bottomBox {
+  display: flex;
+}
+
+.contentBox {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 312px;
+  height: 170px;
+  margin-right: 32px;
+  padding: 32px;
+}
+
+.contentBox > img {
+  width: 64px;
+  height: 64px;
+}
+
+.contentBox > span {
+  margin-top: 8px;
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  color: var(--color-black);
+}
+
+.contentBox > p {
+  white-space: pre-line;
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+  color: var(--color-gray);
+}
+
+.chart {
+  position: absolute;
+  right: 140px;
+  top: 580px;
+}
+
+.leftIcon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-purple);
+  z-index: 3;
+  position: absolute;
+  top: 24px;
+  left: -50px;
+}
+
+.leftIcon > img {
+  width: 45.71px;
+  height: 45.71px;
+}
+
+.rightBox {
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding: 24px;
+  width: 300px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.title {
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+  color: var(--color-gray);
+}
+
+.percent {
+  margin-top: 8px;
+  font-family: 'Poppins-Bold';
+  font-size: 24px;
+  color: var(--color-black);
+}
+
+.rightBox > img {
+  width: 99.5px;
+  height: 78px;
+}
