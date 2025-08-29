@@ -106,6 +106,7 @@
   height: 170px;
   margin-right: 32px;
   padding: 32px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contentBox > img {
@@ -158,6 +159,7 @@
   align-items: flex-end;
   padding: 24px;
   width: 300px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .textBox {

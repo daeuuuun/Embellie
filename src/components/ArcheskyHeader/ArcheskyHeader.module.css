@@ -7,6 +7,15 @@
   width: 1600px;
   align-items: center;
   z-index: 10;
+  top: 0;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
 }
 
 .archeskyHeader > div {
@@ -38,4 +47,21 @@
   color: var(--color-black);
   margin-left: 56px;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.menus li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: var(--color-black);
+  transition: width 0.3s ease;
+}
+
+.menus li:hover::after {
+  width: 100%;
 }
