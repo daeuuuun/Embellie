@@ -20,7 +20,11 @@ function Header() {
                 Categories
               </Link>
             </li>
-            <li>Galleries</li>
+            <li>
+              <Link to='soultravel'>
+                Galleries
+              </Link>
+            </li>
             <li>About</li>
           </ul>
         </nav>

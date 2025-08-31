@@ -1,0 +1,8 @@
+.soulBack {
+  background-color: var(--color-soul-white);
+  height: 1080px;
+  padding: 0 160px;
+  background-image: url(../../assets/img/decoration.jpg);
+  background-repeat: no-repeat;
+  background-position: 105% 0%;
+}

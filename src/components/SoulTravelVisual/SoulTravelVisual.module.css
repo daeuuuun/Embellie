@@ -1,0 +1,26 @@
+.soulMain {
+  display: flex;
+}
+
+.textArea {
+  width: 700px;
+  margin-top: 80px;
+}
+
+.textArea > h2 {
+  font-size: 120px;
+  font-family: 'BebasNeue';
+  color: var(--color-soul-black);
+  font-weight: 400;
+}
+
+.textArea > h2 > span {
+  color: var(--color-soul-orange);
+}
+
+.textArea > p {
+  color: var(--color-soul-black);
+  opacity: 0.5;
+  font-size: 24px;
+  font-family: 'Poppins-Regular';
+}

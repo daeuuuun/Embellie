@@ -7,7 +7,7 @@ import Banner from '../Banner/Banner';
 function Visual() {
   return (
     <>
-      <main>
+      <main className={styles.main}>
         <div className={styles.textArea}>
           <h2>Classy products for your home decoration</h2>
           <p>Any home decor elements you looking for is available here</p>
